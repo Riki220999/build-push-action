@@ -17,6 +17,9 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    
+    - name: Checkout code
+      run: docker pull riki2225/build_image:latest
 
     - name: Build and push Docker images
       uses: docker/build-push-action@v1
