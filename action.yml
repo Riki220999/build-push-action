@@ -6,7 +6,7 @@ branding:
   color: 'blue'
 runs:
   using: docker
-  image: docker://riki2225/build_image
+  image: riki2225/build_image:latest
   args:
     - build-push
 inputs:
