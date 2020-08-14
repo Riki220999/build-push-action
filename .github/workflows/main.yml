@@ -22,7 +22,7 @@ jobs:
       run: docker run -d -p 5000:5000 registry:2
     
     - name: Run pull registry
-      run: docker pull riki2225/build_image
+      run: docker pull riki2225/build_image:latest
     
     - name: Build and push image
       uses: ./
