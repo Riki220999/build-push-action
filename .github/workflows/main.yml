@@ -6,8 +6,7 @@ on:
   push:
     branches:
       - master
-    tags:
-      - '*'
+    tags: latest
   
 jobs:
   build:
@@ -24,4 +23,3 @@ jobs:
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
         repository: riki2225/build_image
-        tags: latest
