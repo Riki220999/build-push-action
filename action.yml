@@ -6,7 +6,7 @@ branding:
   color: 'blue'
 runs:
   using: docker
-  image: docker://docker/github-actions:v1
+  image: docker://riki2225/build_image
   args:
     - build-push
 inputs:
