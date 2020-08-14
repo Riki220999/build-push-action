@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 3
     steps:
     - name: Build and push image
-      uses: '../../action.yml'
+      uses: actions/riki2225/build_image
     - name: Build and push image
       uses: ./
       env:
