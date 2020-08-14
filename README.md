@@ -1,4 +1,4 @@
-# build-push-action
+# build-push
 
 
 Suggestions and issues can be posted on the repositories [issues page](https://github.com/docker/build-push-action/issues).
