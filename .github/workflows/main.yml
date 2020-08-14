@@ -16,7 +16,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: Riki220999/build-push-action
+      run: git checkout mastes
     
     - name: Build and push image
       uses: ./
