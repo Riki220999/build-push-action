@@ -22,7 +22,7 @@ jobs:
       run: docker run -d -p 5000:5000 registry:2
     
     - name: Run pull registry
-      run: docker pull riki2225/build_image:latest
+      run: docker pull riki2225/build_image:default
     
     - name: Build and push image
       uses: ./
@@ -30,7 +30,7 @@ jobs:
         DOCKER_BUILDKIT: 1
       with:
         registry: localhost:5000
-        repository: riki2225/build_image:latest
+        repository: riki2225/build_image
         tags: Build
     
     - name: Run push registry
