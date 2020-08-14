@@ -22,7 +22,5 @@ jobs:
       uses: docker/build-push-action@v1
       with:
         username: riki2225
-        password: Ojogantinehya22
-        registry: hub.docker.com
         repository: riki2225/build_image
         tags: latest
