@@ -24,10 +24,7 @@ jobs:
         DOCKER_BUILDKIT: 1
       with:
         repository: riki2225/build_image
-        tags: Build
+        tags: riki2225/build_image:latest
     
     - name: Run push registry
       run: docker push riki2225/build_image:latest
-      
-    - name: Run image from registry
-      run: docker run localhost:5000/riki2225/build_image:Build
