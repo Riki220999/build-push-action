@@ -16,7 +16,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: https://github.com/Riki220999/build-push-action.git
+      uses: Riki220999/build-push-action
     
     - name: Build and push image
       uses: ./
