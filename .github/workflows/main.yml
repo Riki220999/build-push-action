@@ -14,10 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-
-    - name: Checkout
-      run: git checkout mastes
-    
     - name: Build and push image
       uses: ./
       env:
