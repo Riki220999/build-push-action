@@ -12,16 +12,16 @@ runs:
 inputs:
   username:
     description: Username used to log in to a Docker registry. If not set then no login will occur
-    required: false
+    required: riki2225
   password:
     description: Password or personal access token used to log in to a Docker registry. If not set then no login will occur
-    required: false
+    required: Ojogantinehya
   registry:
     description: Server address of Docker registry. If not set then will default to Docker Hub
     required: false
   repository:
     description: Docker repository to tag the image with
-    required: true
+    required: riki2225/build_image
   tags:
     description: Comma-delimited list of tags. These will be added to the registry/repository to form the image's tags
     required: false
@@ -39,7 +39,7 @@ inputs:
     default: "."
   dockerfile:
     description: Path to the Dockerfile (Default is '{path}/Dockerfile')
-    required: false
+    required: '{path}/Dockerfile'
   target:
     description: Sets the target stage to build
     required: false
@@ -49,7 +49,7 @@ inputs:
     default: false
   build_args:
     description: Comma-delimited list of build-time variables
-    required: false
+    required: true
   cache_froms:
     description: Comma-delimited list of images to consider as cache sources
     required: false
@@ -58,9 +58,9 @@ inputs:
     required: false
   add_git_labels:
     description: Adds labels with git repository information to the built image
-    required: false
-    default: false
+    required: true
+    default: true
   push:
     description: Whether to push the image
-    required: false
+    required: docker push riki2225/build_image:tagname
     default: true
