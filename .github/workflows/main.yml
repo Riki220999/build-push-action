@@ -26,5 +26,8 @@ jobs:
         repository: riki2225/build_image
         tags: riki2225/build_image:latest
     
+    - name: Run build image
+      run: docker build --tag riki2225/build_image:latest
+      
     - name: Run push registry
       run: docker push riki2225/build_image:latest
